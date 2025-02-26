@@ -7,7 +7,23 @@
 </head>
 <body>
     
-<script src="app.js"></script>
+<script src="./app.js"></script>
+
+<p id="testrun"></p>
+
+<script>
+var  a = 100;
+//a equals 100 outside of the {}, this is a global scope for a variable
+
+{  
+var a = 90;
+   //a equals 90 inside of the {}, this is a block scope for a variable 
+}
+
+// a is 90
+document.getElementById("testrun").innerHTML = a;
+</script>
+
 
 </body>
 </html>
